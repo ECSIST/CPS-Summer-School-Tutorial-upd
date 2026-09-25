@@ -4,10 +4,8 @@ A Python 3.12 / Linux x86_64 environment for `CPS Tutorial - Concrete.ipynb`, in
 
 ## Start as a student
 
-1. Extract the ZIP. Create a GitHub repository and upload **the contents** of `cps-tutorial-codespaces`, including the hidden `.devcontainer` directory. The notebook, requirements, and `.devcontainer` must be at the repository root. A Git client is useful if your file picker hides dotfiles.
-2. On GitHub, choose **Code → Codespaces → Create codespace**. The configuration requests at least 4 cores and 16 GB RAM. Availability depends on your account or organization.
-3. Wait for the container setup to finish. It installs dependencies, registers a kernel, checks the model/data, and runs a small encrypted calculation. First setup can take several minutes.
-4. Open `CPS Tutorial - Concrete.ipynb`. In **Select Kernel**, choose **CPS Tutorial (Python 3.12)**. If necessary choose **Python Environments → .venv/bin/python** or reload the window.
+1. On GitHub, choose **Code → Codespaces → Create codespace**. The configuration requests at least 4 cores and 16 GB RAM. Availability depends on your account or organization.
+2. Open `CPS Tutorial - Concrete.ipynb`. In **Select Kernel**, choose **CPS Tutorial (Python 3.12)**. If necessary choose **Python Environments → .venv/bin/python** or reload the window.
 5. Run cells in order. Exercise cells are intentionally incomplete for students to fill in.
 
 Codespaces usage is subject to your GitHub account's quota/billing. Stop the codespace when finished. This archive does not create or publish a GitHub repository for you.
@@ -25,7 +23,7 @@ References: [Concrete ML 1.9.0](https://pypi.org/project/concrete-ml/1.9.0/), [C
 ## Files and notebook changes
 
 - `CPS Tutorial - Concrete.ipynb`: runnable tutorial with cleared saved outputs and Python 3.12 kernel metadata.
-- `pruned_model_35_percent_acc_9629.onnx`, `test_X.npy`, `test_Y.npy`: original assets, unchanged.
+- `pruned_model_35_percent_acc_9629.onnx`, 'pruned_model_50_percent_acc_9518.onnx', `test_X.npy`, `test_Y.npy`: original assets, unchanged.
 - `.devcontainer/devcontainer.json` and `setup.sh`: container and automatic setup.
 - `requirements.txt`: compatible pinned direct dependencies.
 - `scripts/check_environment.py`: imports, ONNX validation, data checks, and a small encrypted calculation.
