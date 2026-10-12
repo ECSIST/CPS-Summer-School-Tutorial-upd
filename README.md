@@ -27,7 +27,6 @@ References: [Concrete ML 1.9.0](https://pypi.org/project/concrete-ml/1.9.0/), [C
 - `.devcontainer/devcontainer.json` and `setup.sh`: container and automatic setup.
 - `requirements.txt`: compatible pinned direct dependencies.
 - `scripts/check_environment.py`: imports, ONNX validation, data checks, and a small encrypted calculation.
-- `reference/cps-tutorial-1.ipynb`: extra notebook found in the supplied ZIP, preserved as received. It uses **pi-heaan**, which is not installed or supported by this Concrete environment. Do not run its installation cell as part of tutorial 2.
 
 The original notebook referred to an absent `anomaly_detection` directory, lowercase `test_y.npy`, and a different 50%-pruned model. Those paths now point to the supplied files at the repository root. Reported model results may differ from the original saved outputs because the supplied model is the 35%-pruned variant.
 
